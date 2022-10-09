@@ -3,7 +3,6 @@ import { Box } from 'rebass'
 export const Banner = props => (
   <Box
     sx={{
-      bg: 'bannerBG',
       color: 'bannerColor',
       py: [4, 5],
       mb: [4, 5]
@@ -22,23 +21,10 @@ export const Banner = props => (
           textShadow: '0 0 5px currentColor',
           mb: 3
         },
-        h2: {
-          color: 'bannerColorAlt',
-          fontSize: [3, 4, 5],
-          lineHeight: 'heading',
-          fontWeight: 'medium',
-          mb: 2
-        },
-        p: {
-          color: 'bannerColorAlt',
-          fontWeight: 'medium',
-          fontSize: 2
-        },
-        li: {
-          mr: 3
-        }
+       
       }}
     />
+    <img style={{width:'100%'}} src="static/sandy_hacks_header_divider.svg"></img>
   </Box>
 )
 

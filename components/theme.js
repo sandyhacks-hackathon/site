@@ -21,6 +21,8 @@ export const palette = {
   smoke: '#e0e6ed',
   snow: '#f9fafc',
   white: '#ffffff',
+  yellow: '#eed35a',
+  darkgrey: '#0e0e0e',
   // brand
   primary: '#ffb400',
   primaryWash: '#ffdc89',
@@ -63,13 +65,13 @@ const theme = merge(base, {
   colors: {
     ...palette,
     text: palette.black,
-    background: palette.snow,
-    cards: palette.white,
+    background: palette.darkgrey,
+    cards: palette.yellow,
     muted: palette.muted,
     sunken: palette.smoke,
     bannerBG: palette.alt,
-    bannerColor: palette.white,
-    bannerColorAlt: palette.white,
+    bannerColor: palette.yellow,
+    bannerColorAlt: palette.yellow,
     coolBg: palette.cool,
     modes: {
       dark: {
