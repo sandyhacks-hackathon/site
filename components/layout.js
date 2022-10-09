@@ -62,7 +62,7 @@ export default props => {
             variant="styles.navitem"
             sx={{ display: ['none', 'block'], fontWeight: 'mediumbold' }}
           >
-            AngelHacks
+            Sandy Hacks
           </A>
         </Link>
         <Box sx={{ mx: 'auto' }} />
@@ -138,7 +138,7 @@ export default props => {
             }}
           >
             <Text sx={{ fontFamily: 'heading', fontSize: 0, color: 'inherit' }}>
-              AngelHacks, event run by Ad Astra Hack Club
+              Sandy Hacks
             </Text>
             <Text
               sx={{
