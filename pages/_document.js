@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { extractCritical } from 'emotion-server'
 
 export default class extends Document {
@@ -18,7 +18,7 @@ export default class extends Document {
 
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
@@ -26,7 +26,7 @@ export default class extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
