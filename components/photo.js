@@ -23,10 +23,10 @@ const Caption = styled(Text)`
   max-width: 100%;
   z-index: 0;
   ${({ colorMode }) =>
-    colorMode === 'dark'
+    colorMode === 'light'
       ? `
           background-color: rgba(0, 0, 0, 0.75);
-          color: ${theme.colors.white};
+          color: ${theme.colors.lightgrey};
           @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
             background-color: rgba(0, 0, 0, 0.75);
             -webkit-backdrop-filter: saturate(180%) blur(16px);

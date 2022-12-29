@@ -52,11 +52,11 @@ export default props => {
         sx={{
           color: 'primary',
           alignItems: 'center',
-          px: 3,
+          px: 1,
           py: 3
         }}
       >
-        <Avatar light size={60} sx={{ mr: 1 }} />
+        <Avatar light size={40} sx={{ mr: 1 }} />
         <Link href="/">
           <A
             variant="styles.navitem"
@@ -66,22 +66,9 @@ export default props => {
           </A>
         </Link>
         <Box sx={{ mx: 'auto' }} />
-        <Link href="/schedule">
-          <A variant="styles.navitem">Schedule</A>
-        </Link>
         <Link href="/register">
           <A variant="styles.navitem">Register</A>
         </Link>
-        <Link href="/about">
-          <A variant="styles.navitem">About</A>
-        </Link>
-        <ColorButton
-          sx={{ ml: [2, 3] }}
-          onClick={e => {
-            const next = mode === 'dark' ? 'light' : 'dark'
-            setMode(next)
-          }}
-        />
       </Flex>
       <Box
         as="main"

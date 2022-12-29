@@ -1,19 +1,19 @@
 import Head from 'next/head'
 
 export default ({
-  title = 'AngelHacks – Dedicated to giving back!',
-  description = 'A 12-hour hackathon for middle and high schoolers in Los Angeles.',
-  image = 'https://angelhacks.org/public/banner-inverted.png',
-  url = 'https://angelhacks.org'
+  title = 'SandyHacks',
+  description = 'An all-day hackathon for students across San Diego.',
+  image = 'https://sandyhacks.org/static/sandy_hacks_header_divider.svg', //idk really what's supposed to go here but angelhacks linked to a broken url of their banner, so i've one-upped them with a working url of ours
+  url = 'https://sandyhacks.org'
 }) => (
   <Head>
     <title>{title}</title>
     <meta property="og:title" content={title} />
     <meta name="twitter:title" content={title} />
-    <meta name="og:url" content={url} />
+    <meta name="og:url" content={'https://sandyhacks.org'} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="AngelHacks" />
-    <meta name="twitter:site" content="@angelhacks_la" />
+    <meta property="og:site_name" content="SandyHacks" />
+    <meta name="twitter:site" content="@twitterhandle" />
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
     <meta name="twitter:description" content={description} />
@@ -26,20 +26,18 @@ export default ({
         __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Organization',
-          name: 'angelhacks',
-          url: 'https://angelhacks.org',
-          logo: 'https://angelhacks.org/logo_inverted.png',
+          name: 'sandyhacks',
+          url: 'https://sandyhacks.org',
+          logo: 'https://sandyhacks.org/static/logo.svg',
           sameAs: [
-            'https://twitter.com/angelhacks_la',
-            'https://www.instagram.com/angelhacks.la',
-            'https://www.facebook.com/angelhacks_la'
+            //insert links to social media here in '', '', format
           ],
           contactPoint: [
             {
               '@type': 'ContactPoint',
-              email: 'hello@angelhacks.org',
+              email: 'team@sandyhacks.org',
               contactType: 'customer support',
-              url: 'https://angelhacks.org'
+              url: 'https://sandyhacks.org'
             }
           ]
         })
@@ -51,23 +49,23 @@ export default ({
         __html: JSON.stringify({
           '@context': 'http://schema.org/',
           '@type': 'Event',
-          name: 'AngelHacks',
-          startDate: '2019-10-26T9:00',
-          endDate: '2019-10-26T21:00',
+          name: 'SandyHacks',
+          startDate: '2023-02-04T9:00',
+          endDate: '2023-02-04T18:00',
           description:
-            'Register today for 12 hours of coding, fun, free food, and prizes. AngelHacks will be on October 26, 2019 and open to all middle and high school students.',
+            'Register today for 9 hours of coding, fun, free food, and prizes, held Feburary 4th 2023 from 9 AM to 6 PM. Open to students of all experience levels ages 13-18.',
           isAccessibleForFree: true,
-          url: 'https://angelhacks.org',
-          image: 'https://angelhacks.org/public/logo-inverted.png',
+          url: 'https://sandyhacks.org',
+          image: 'https://angelhacks.org/static/logo.svg',
           location: {
             '@type': 'Place',
-            name: 'Snapchat Headquarters',
+            name: 'TBA', //GOTTA ADD THIS ONCE THE VENUE IS DECIDED ;A; <---- <---- DONT FORGET!!
             address: {
               '@type': 'PostalAddress',
-              addressLocality: 'Los Angeles',
+              addressLocality: 'San Diego',
               addressRegion: 'CA',
-              postalCode: '90291',
-              streetAddress: '606 Venice Blvd., Venice 90291'
+              postalCode: 'TBA',
+              streetAddress: 'TBA'
             }
           },
           sponsor: {
@@ -78,16 +76,16 @@ export default ({
           offers: {
             '@type': 'Offer',
             name: 'Free Admission',
-            url: 'https://angelhacks.com',
+            url: 'https://sandyhacks.com',
             price: '0',
             priceCurrency: 'USD',
             availability: 'https://schema.org/InStock',
-            validFrom: '2019-04-01',
-            validThrough: '2019-06-22'
+            validFrom: '2023-01-01',
+            validThrough: '2019-02-04' //unless it's delayed in which case change this
           },
           performer: {
             '@type': 'PerformingGroup',
-            name: 'AngelHacks Ad Astra Team'
+            name: 'Sandy Hacks And The Amazing Technicolor Team'
           }
         })
       }}

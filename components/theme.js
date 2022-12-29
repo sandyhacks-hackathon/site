@@ -18,13 +18,15 @@ export const palette = {
   steel: '#273444',
   slate: '#3c4858',
   muted: '#8492a6',
-  smoke: '#e0e6ed',
+  smoke: '#3f3f3f',
   snow: '#f9fafc',
   white: '#ffffff',
   yellow: '#eed35a',
   darkgrey: '#0e0e0e',
+  lightgrey: '#DADADA',
+  mutedaccent: '#c69152',
   // brand
-  primary: '#ffb400',
+  primary: '#eed35a',
   primaryWash: '#ffdc89',
   /*
   alt: '#007a87',
@@ -49,7 +51,7 @@ export const palette = {
   accent: '#5cdb95',
   accentWash: '#befad9',
   accentLight: '#8ee4af',
-  accentDark: '#189975',
+  accentDark: '#0C7681',
   success: '#3fb34f',
   error: '#b23f42',
   cool: '#00bdde',
@@ -64,7 +66,7 @@ const theme = merge(base, {
   initialColorMode: 'light',
   colors: {
     ...palette,
-    text: palette.black,
+    text: palette.lightgrey,
     background: palette.darkgrey,
     cards: palette.yellow,
     muted: palette.muted,
@@ -147,10 +149,18 @@ const theme = merge(base, {
       lineHeight: 'heading'
     },
     card: {
-      bg: 'cards',
+      outline: "2px dotted yellow",
+      bg: 'none',
       p: [3, 4],
       borderRadius: 'extra',
       boxShadow: 'card'
+    },
+    innerCard:{
+      bg:'mutedaccent',
+      p: [1,1],
+      padding: "1em !important",
+      margin: "1em !important",
+      borderRadius:'extra',
     },
     sheet: {
       bg: 'cards',
@@ -174,7 +184,7 @@ const theme = merge(base, {
       }
     },
     p: {
-      fontFamily: 'mono'
+      fontFamily: 'mono',
     },
     img: {
       maxWidth: '100%',

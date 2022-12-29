@@ -6,14 +6,11 @@ export default ({ size = 50, light = false, ...props }) => (
     <A sx={{ cursor: 'pointer', lineHeight: 0 }}>
       <Image
         {...props}
-        src="/static/logo-inverted.png"
+        src="/static/sandyhacks_logo_yellow.png"
         alt="Sandy Hacks avatar"
         width={size}
         height={size}
         sx={{
-          borderRadius: 'circle',
-          overflow: 'hidden',
-          bg: 'primary',
           ...props.sx
         }}
       />

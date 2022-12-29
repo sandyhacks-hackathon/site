@@ -4,8 +4,8 @@ export const Banner = props => (
   <Box
     sx={{
       color: 'bannerColor',
-      py: [4, 5],
-      mb: [4, 5]
+      py: [4, 4],
+      mb: [4, 0]
     }}
   >
     <Box
