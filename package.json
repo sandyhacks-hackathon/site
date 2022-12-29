@@ -5,8 +5,8 @@
   "author": "@lachlanjc and AngelHacks <hello@angelhacks.org>",
   "license": "MIT",
   "scripts": {
-    "build": "node_modules\\.bin\next build && node_modules\\.bin\\next export",
-    "start": "node_modules\\.bin\\next"
+    "build": "node_modules/.bin/next build && node_modules/.bin/next export",
+    "start": "node_modules/.bin/next"
   },
   "dependencies": {
     "@emotion/styled": "^10.0.17",
