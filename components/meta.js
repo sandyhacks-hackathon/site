@@ -3,7 +3,7 @@ import Head from 'next/head'
 export default ({
   title = 'SandyHacks',
   description = 'An all-day hackathon for students across San Diego.',
-  image = 'https://sandyhacks.org/static/sandy_hacks_header_divider.svg', //idk really what's supposed to go here but angelhacks linked to a broken url of their banner, so i've one-upped them with a working url of ours
+  image = 'https://sandyhacks.org/static/sandy_hacks_header_divider.svg', //idk really what's supposed to go here but sandyhacks linked to a broken url of their banner, so i've one-upped them with a working url of ours
   url = 'https://sandyhacks.org'
 }) => (
   <Head>
@@ -56,7 +56,7 @@ export default ({
             'Register today for 9 hours of coding, fun, free food, and prizes, held Feburary 4th 2023 from 9 AM to 6 PM. Open to students of all experience levels ages 13-18.',
           isAccessibleForFree: true,
           url: 'https://sandyhacks.org',
-          image: 'https://angelhacks.org/static/logo.svg',
+          image: 'https://sandyhacks.org/static/logo.svg',
           location: {
             '@type': 'Place',
             name: 'TBA', //GOTTA ADD THIS ONCE THE VENUE IS DECIDED ;A; <---- <---- DONT FORGET!!
