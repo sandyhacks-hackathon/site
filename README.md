@@ -1,5 +1,7 @@
-# AngelHacks 2021 site
+# SandyHacks 2023 site
 
-[**angelhacks.org**](https://angelhacks.org)
+[**sandyhacks.org**](https://sandyhacks.org)
+
+Based upon the AngelHacks 2021 site: [**angelhacks.org**](https://angelhacks.org)
 
 MIT License
