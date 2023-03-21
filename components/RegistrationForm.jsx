@@ -6,10 +6,10 @@ const RegistrationForm = () => {
   return (
     <div style={{ height: "80vh" }}>
       <iframe
-        class="airtable-embed"
+        className="airtable-embed"
         src="https://airtable.com/embed/shrya40Trxq3m2A8J?backgroundColor=yellow"
-        frameborder="0"
-        onmousewheel=""
+        frameBorder="0"
+        onMouseWheel=""
         width="100%"
         height="100%"
         style={{ background: "transparent", border: "1px solid #ccc" }}
