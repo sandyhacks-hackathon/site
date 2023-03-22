@@ -120,15 +120,16 @@ export const FAQ = (props) => (
       ul: {
         p: 0,
         m: 0,
-        listStyle: "none",
-        display: "grid",
-        gridTemplateColumns: [null, "1fr 1fr"],
-        gridGap: [3, 4],
+        paddingLeft: "1.5rem",
       },
       li: {
-        fontSize: [1, null, 2],
+        fontSize: [1, null, 3],
       },
-      p: { my: "2.5rem", fontSize: 28 },
+      p: {
+        my: "2.5rem",
+        fontSize: 28,
+        marginBottom: "1rem !important", // I am so sorry
+      },
       strong: {
         fontSize: 30,
         display: "block",
