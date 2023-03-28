@@ -23,11 +23,6 @@ const data = {
       link: "https://digitalocean.com",
       image: "../static/DO_Logo_horizontal_blue.svg",
     },
-    {
-      name: "Sticker Mule",
-      link: "https://stickermule.com",
-      image: "../static/stickermule.png",
-    },
   ],
 };
 
