@@ -23,6 +23,11 @@ const data = {
       link: "https://digitalocean.com",
       image: "../static/DO_Logo_horizontal_blue.svg",
     },
+    {
+      name: "Taskade",
+      link: "https://taskade.com",
+      image: "../static/logo_taskade_white.png",
+    },
   ],
 };
 
@@ -42,8 +47,6 @@ const Base = styled(Box)`
   img {
     max-width: 75%;
     max-height: ${(props) => (props.section === "sponsors" ? 6 : 4)}rem;
-    ${(props) =>
-      props.colorMode === "dark" && `filter: invert() hue-rotate(180deg);`}
   }
 `;
 
